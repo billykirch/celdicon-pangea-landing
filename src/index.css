@@ -1,0 +1,114 @@
+/* Inter and Saira Google Font imports: */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Body Formatting */
+
+:root {
+  --font-primary: 'Saira', sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;;
+
+  --color-primary: #ffa300;
+  --color-secondary: #FFFFFF;
+  --color-terciary: #000000;
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+/* prevent padding overflow */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+/**/
+
+body {
+  font-family: var(--font-secondary);
+  margin: 0;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 3rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+p {
+  font-size: 1.5rem;
+  color: var(--color-secondary);
+  line-height: 2.25rem;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  font-size: 1.5rem;
+  color: var(--color-secondary);
+  line-height: 3rem;
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border-radius: 0.5rem;
+  border-width: 0;
+  padding: 0.75rem 1rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-family: var(--font-primary);
+  line-height: 1.5rem;
+  color: var(--color-terciary);
+  background-color: var(--color-primary);
+  cursor: pointer;
+  margin: 0;
+}
+button:hover {
+  box-shadow: 0 0.25rem 1rem 0 var(--color-primary);
+}
+
+b {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Mobile Dev */
+
+@media (max-width: 900px) {
+    :root {
+        font-size: 14px;
+    }
+}

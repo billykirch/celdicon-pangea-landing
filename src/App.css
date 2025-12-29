@@ -1,0 +1,240 @@
+/* 
+
+Helper Classes 
+
+*/
+
+.page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem; /* prevent text hugging on mobile */
+}
+
+.badge { /* class applied to header text */
+    background-color: var(--color-primary);
+    color: var(--color-terciary);
+    border-radius: 8px;
+    border-width: 0;
+    padding: 0.25rem 1rem;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.flex-col { /* very rigid implementation... will each para need its own class? */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 45%;
+}
+
+/* 
+
+Structural Classes 
+
+*/
+
+.banner-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* top-bottom justification */
+    justify-content: left;
+    gap: 2rem;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.CTAB-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.hero-spec {
+    max-width: 40%;
+    padding-bottom: 2.25rem; /* for proper image/text centering */
+}
+
+.specs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.25rem;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+}
+
+.specs-images {
+    display: flex;
+    flex-direction: row;
+    gap: 2.25rem;
+    align-items: center;
+    justify-content: center; /* required for horizontal centering in a row... */
+    max-width: 60%;
+}
+
+.users-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding: 3rem;
+    gap: 2.25rem;
+    border: 2px solid var(--color-primary); /* leave px for border things? */
+    border-radius: 16px;
+    box-shadow: 0 2px 16px 0 var(--color-primary);
+}
+
+.user-type {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5px;
+    align-items: center;
+}
+
+.user-type-container { /* anything more generalizable? */
+    display: flex;
+    flex-direction: row;
+    gap: 4.5rem;
+}
+
+.diffs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    padding-top: 13rem;
+    padding-bottom: 7rem;
+}
+
+.diff-types-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    max-width: 90%
+}
+
+.diff-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.modes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 9rem;
+}
+
+.mode-types-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.vision-container { 
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.25rem;
+    padding-bottom: 4.5rem;
+    padding-right: 3rem; 
+    padding-left: 3rem;
+    gap: 1.5rem;
+    background-color: var(--color-primary);
+    border-radius: 1rem;
+}
+
+.vision-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 2rem;
+}
+
+.vision-container h2, /* Reversed color scheme */
+.vision-container h3,
+.vision-container p {
+    color: var(--color-terciary);
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+
+.footer {
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    width: 100%
+}
+
+
+
+/* 
+
+Mobile Dev
+
+*/
+
+@media (max-width: 900px) {
+  .banner-container,
+  .hero-container,
+  .specs-images,
+  .user-type-container,
+  .diff-type,
+  .mode-types-container,
+  .vision-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-col,
+  .hero-spec,
+  .specs-images,
+  .diff-types-container {
+    max-width: 100%;
+  }
+
+  .users-container {
+    margin: 1.5rem;
+    padding: 1.5rem;
+  }
+  .diff-type {
+    gap: 1rem;
+  }
+  .hero-container {
+    gap: 1rem;
+  }
+  .hero-spec {
+    padding-bottom: 0.5rem;
+  }
+}
