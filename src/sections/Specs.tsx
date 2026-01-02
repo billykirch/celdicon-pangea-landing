@@ -27,7 +27,7 @@ function Specs() {
             <div>
                 <h1 className='center-text'><b>Other specs</b> include:</h1>
                 <ul>
-                    <li>4K display</li>
+                    <li>Up to 4K display</li>
                     <li>120Hz-165Hz visuals + VRR</li>
                     <li>Dual stereo speakers</li>
                     <li>USB-C and HDMI connectivity</li>
