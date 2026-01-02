@@ -1,11 +1,12 @@
 import '../App.css'
+import Star from '/shooting-star-black.svg'
 
 function Vision() {
     return (
         <div className="vision-container">
             <div className="vision-header">
                 <h2><b>Our Vision</b></h2>
-                <img className="black-star" src='/shooting-star-black.svg'></img> {/* flip star? */}
+                <img className="black-star" src={Star}></img> {/* flip star? */}
             </div>
             <h3>Simply put, modern devices deserve better screens.</h3>
             <p>
